@@ -1,0 +1,46 @@
+<div class="card">
+  <h3 class="card-header">Display Player Statistics</h3>
+  <div class="card-body">
+    <!-- Player Select -->
+    <div class="dropdown my-3">
+      <!-- <h5 class="d-inline">Player:</h5> -->
+      <button class="mb-3" (click)="displayPlayer()">Display my Stats!</button>
+      <!-- <button class="btn dropdown-toggle d-inline" type="button" id="playerDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button> -->
+      <input type="text" class="form-control d-inline" id="playerSelect" placeholder="Player" value="{{name + forThe + teamName}}" readonly>
+      <!-- <div class="dropdown-menu" id="positionDropdown" aria-labelledby="positionDropdown">
+         <ul>
+          <li *ngfor data as player></li>
+        </ul>
+        <a class="dropdown-item" id="Test" (click)="playerSelect(this.id)">Test Player</a>
+      </div> -->
+    </div>
+
+    <!-- Offensive Stat Display -->
+    <div class="">
+      <h6 class="text-danger">Offensive Stats:</h6>
+      <ul>
+        <li>Batting Average: {{ batAvg }}</li>
+        <li>Slugging Percentage: {{ sluggingPercentage }}</li>
+      </ul>
+    </div>
+
+    <!-- Defensive Stat Display -->
+    <div class="">
+      <h6 class="text-primary">Defensive Stats:</h6>
+      <ul>
+        <li>Fielding Percentage: {{ fieldingPercentage }}</li>
+      </ul>
+    </div>
+
+    <!-- Pitching Stat Display -->
+    <div class="">
+      <h6 class="text-info">Pitching Stats:</h6>
+      <ul>
+        <li>Earned Run Average: {{ era }}</li>
+        <li>K/9 Innings: {{ kThruNine }}</li>
+        <li>Whip: {{ whip }}</li>
+      </ul>
+    </div>
+
+  </div>
+</div>

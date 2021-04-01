@@ -1,0 +1,26 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>Welcome to the {{ title }}!</h1>
+  <h3>Where you can customize your own MLB players!</h3>
+  <h4>And test their personal in-game stats!</h4>
+</div>
+
+<div class="row-align-center py-5">
+  <div class="col-sm-8 mx-auto">
+    <app-create-player></app-create-player>
+  </div>
+</div>
+
+<div class="row-align-center py-5">
+  <div class="col-sm-8 mx-auto">
+    <app-test-stats></app-test-stats>
+  </div>
+</div>
+
+<div class="row-align-center py-5">
+  <div class="col-sm-8 mx-auto">
+    <app-display-stats></app-display-stats>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
